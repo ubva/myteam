@@ -1,0 +1,113 @@
+.intro{
+  padding-top: 79px;
+}
+.intro__wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.intro__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+    left: 20px;
+}  
+.intro__title::before{
+    position: absolute;
+    display: inline-block;
+    width: 358px;
+    height: 100px;
+    top: 94px;
+    left: -136px;
+    content: "";
+    background-image: url("../images/another/left.png");
+    background-repeat: no-repeat;
+}
+
+.difference{
+    color:  #F67E7E;
+}
+.intro__box{
+    margin-left: auto;
+}
+.intro__box-spn{
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background: #79C8C7;
+    margin-bottom: 70px;
+}
+.intro__box-desc{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    width: 445px;
+}
+.intro__title::after{
+        position: absolute;
+        display: inline-block;
+        width: 358px;
+        height: 100px;
+        right: 0px;
+        bottom: -71px;
+        content: "";
+        background-image: url("../images/another/bottom.png");
+        background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 689px) {
+    .intro {
+      padding: 30px;
+    }
+    .intro__wrapper {
+      flex-direction: column;
+    }
+    .intro__title {
+      text-align: center;
+      margin: 0;
+      margin-top: 20px;
+    }
+    .intro__title::before{
+      display: none;
+    }
+    .intro__title::after{
+      left: 97px;
+      bottom: -150px;
+    }
+    .intro__box {
+      margin-left: 0;
+    }
+    .intro__box-spn {
+      display: none;
+      margin-bottom: 0;
+    }
+    .intro__box-desc {
+      text-align: center;
+      margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .intro__title{
+        font-weight: 400;
+        font-size: 67px;
+        text-align: center;
+        margin-left: 96px;
+        width: 327px;
+        margin-left: 0;
+    }
+    .intro__box-desc{
+        font-weight: 400;
+        text-align: center;
+        margin-left: 25px;
+        width: 327px; 
+    }
+    .intro__title::after{
+        left: -21px;
+        bottom: -150px;
+      }
+}
