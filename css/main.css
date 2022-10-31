@@ -502,18 +502,6 @@ header {
   left: 20px;
 }
 
-.intro__title::before {
-  position: absolute;
-  display: inline-block;
-  width: 358px;
-  height: 100px;
-  top: 94px;
-  left: -136px;
-  content: "";
-  background-image: url("../images/another/left.png");
-  background-repeat: no-repeat;
-}
-
 .difference {
   color: #F67E7E;
 }

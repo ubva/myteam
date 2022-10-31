@@ -1,8 +1,19 @@
 .intro{
-  padding: 79px;
+  padding: 139px 0 250px 0 ;
   background-color:#014E56 ;
   width: 100%;
 }
+.intro__title::before{
+    position: absolute;
+    display: inline-block;
+    width: 358px;
+    height: 100px;
+    top: 94px;
+    left: -136px;
+    content: "";
+    background-image: url("../images/another/left.png");
+    background-repeat: no-repeat;}
+
 .intro__wrapper{
     display: flex;
     align-items: center;
@@ -16,17 +27,6 @@
     color: #FFFFFF;
     left: 20px;
 }  
-.intro__title::before{
-    position: absolute;
-    display: inline-block;
-    width: 358px;
-    height: 100px;
-    top: 94px;
-    left: -136px;
-    content: "";
-    background-image: url("../images/another/left.png");
-    background-repeat: no-repeat;
-}
 
 .difference{
     color:  #F67E7E;
