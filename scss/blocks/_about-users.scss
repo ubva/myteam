@@ -1,0 +1,43 @@
+.about__users{
+    width: 100%;
+    background-color: #004047 ;
+    padding:  140px 0;
+}
+.about__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF; 
+}
+.about__title-spn{
+    color: #79C8C7;
+}
+.about__list{
+    display: flex;
+    align-items: center;
+}
+.about__list-item{
+    text-align: center;
+    padding: 0 30px;
+}
+.about__list-opinions{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF; 
+}
+.about__list-person{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #79C8C7; 
+}
+.about__list-desc{
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    }

@@ -482,7 +482,7 @@ header {
 }
 
 .intro {
-  padding-top: 79px;
+  padding: 79px;
   background-color: #014E56;
   width: 100%;
 }
@@ -657,4 +657,153 @@ header {
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+
+.about__users {
+  width: 100%;
+  background-color: #004047;
+  padding: 140px 0;
+}
+
+.about__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.about__title-spn {
+  color: #79C8C7;
+}
+
+.about__list {
+  display: flex;
+  align-items: center;
+}
+
+.about__list-item {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.about__list-opinions {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.about__list-person {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+
+.about__list-desc {
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.contact {
+  width: 100%;
+  background-color: #F67E7E;
+  padding: 76px;
+}
+
+.contact__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+}
+
+.contact__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012F34;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  padding: 9PX 32px;
+}
+
+footer {
+  width: 100%;
+  background-color: #002529;
+  padding: 48px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__main-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer__main-item {
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+.footer__main-item:nth-child(1) {
+  padding-left: 0;
+}
+
+.footer__main-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.footer__about-list {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.footer__link-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.footer__link-item {
+  margin-left: 16px;
+}
+
+.footer__link-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer__link-desc {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */
