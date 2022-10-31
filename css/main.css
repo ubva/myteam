@@ -609,7 +609,6 @@ header {
 
 .services__wrapper {
   display: flex;
-  align-items: center;
   position: relative;
 }
 
@@ -629,16 +628,22 @@ header {
   height: 4px;
   background: #F67E7E;
   position: absolute;
-  top: 5px;
+  top: 10px;
 }
 
 .services__list {
-  margin-left: 220px;
+  margin-left: 125px;
+}
+
+.services__list-img {
+  margin-right: 23px;
 }
 
 .services__list-item {
   margin: 32px 0;
   max-width: 445px;
+  display: flex;
+  align-items: center;
 }
 
 .services__item-title {
