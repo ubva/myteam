@@ -1,5 +1,7 @@
 .intro{
   padding-top: 79px;
+  background-color:#014E56 ;
+  width: 100%;
 }
 .intro__wrapper{
     display: flex;
@@ -46,20 +48,16 @@
     line-height: 28px;
     color: #FFFFFF;
     width: 445px;
+    
 }
-.intro__title::after{
-        position: absolute;
-        display: inline-block;
-        width: 358px;
-        height: 100px;
-        right: 0px;
-        bottom: -71px;
-        content: "";
+.intro{
+       
         background-image: url("../images/another/bottom.png");
         background-repeat: no-repeat;
+        background-position: bottom center;
 }
 
-@media only screen and (max-width: 689px) {
+@media only screen and (max-width: 800px) {
     .intro {
       padding: 30px;
     }
@@ -67,8 +65,11 @@
       flex-direction: column;
     }
     .intro__title {
+      font-weight: 400;
+      font-size: 67px;
       text-align: center;
       margin: 0;
+      padding: 0;
       margin-top: 20px;
     }
     .intro__title::before{
@@ -76,7 +77,8 @@
     }
     .intro__title::after{
       left: 97px;
-      bottom: -150px;
+      bottom: 0;
+
     }
     .intro__box {
       margin-left: 0;
@@ -88,10 +90,11 @@
     .intro__box-desc {
       text-align: center;
       margin-left: 0;
+      margin-bottom: 256px;
     }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 575px){
     .intro__title{
         font-weight: 400;
         font-size: 67px;
@@ -105,6 +108,7 @@
         text-align: center;
         margin-left: 25px;
         width: 327px; 
+        margin-bottom: 256px;
     }
     .intro__title::after{
         left: -21px;

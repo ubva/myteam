@@ -1,3 +1,8 @@
+header{
+    background-color:#014E56 ;
+    width: 100%;
+}
+
 .header__wrapper{
     padding-top: 72px; ;
     display: flex;
@@ -29,11 +34,14 @@
     border: 2px solid #FFFFFF;
     border-radius: 24px;
     padding: 9px 11px;
+    display: inline-block;
+
 }
 .active{
     display: block;
 }
 .header__btn{
+    padding: 0;
     background-color: #014E56 ;
     border: none;
     position: relative;
@@ -48,28 +56,33 @@
 .header__spn::before{
     content: "";
     width: 20px;
-    height: 4px;
+    height: 5px;
     display: inline-block;
     background: #FFFFFF;
 }
 .header__spn::after{
     content: "";
     width: 20px;
-    height: 4px;
+    height: 5px;
     display: inline-block;
     background: #FFFFFF;
+  
     position: absolute;
     top: 21px;
-    right: 6px;
+    right: 0px;
 }
 
-@media only screen and (max-width: 689px) {
+@media only screen and (max-width: 800px) {
     .header__wrapper{
         display: flex;
         align-items: center;
+        margin: 0;
+    }
+    .header__left{
+        margin-left: auto;
     }
 }
-@media only screen and (max-width:375px){
+@media only screen and (max-width:575px){
     .header__nav-list{
         display: none;
     }  

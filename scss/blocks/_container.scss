@@ -4,13 +4,3 @@
     margin: 0 auto;
     padding: 0 15px;
 }
-@media only screen and (max-width:1140px) {
-    .container{
-       max-width: 689px; 
-    }
-}
-@media  only screen and (max-width:689px) {
-    .container{
-        max-width: 357px ;
-    }
-}
