@@ -2,11 +2,15 @@ header{
     background-color:#014E56 ;
     width: 100%;
 }
-
+.header__right{
+    display: flex;
+    align-items: center;
+}
 .header__wrapper{
     padding-top: 72px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    justify-content: space-between; 
 }
 .header__nav-list{
     display: flex;
@@ -22,9 +26,6 @@ header{
     line-height: 28px;
     color: #FFFFFF;  
 }
-.header__left{
-    margin-left: auto;
-}
 .header__tel-link{
     font-style: normal;
     font-weight: 600;
@@ -38,7 +39,7 @@ header{
 
 }
 .active{
-    display: block;
+    
 }
 .header__btn{
     padding: 0;
@@ -68,7 +69,7 @@ header{
     background: #FFFFFF;
   
     position: absolute;
-    top: 21px;
+    top: 19px;
     right: 0px;
 }
 

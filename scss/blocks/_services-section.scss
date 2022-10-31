@@ -4,19 +4,19 @@
     padding: 198px 165px;
     position: relative;
 }
-.services::before{
+.services::before {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -98px;
+    bottom: 0;
     z-index: 1;
     content: "";
     display: block;
     width: 200px;
     height: 244px;
     margin: 0 auto;
-    background-image: url("../images/another/about-users.png");
+    background-image: url("../images/another/sevices-bc.png");
     background-repeat: no-repeat;
-}
+  }
 .services__wrapper{
     display: flex;
     position: relative;
@@ -78,5 +78,22 @@
     .services__title{
         max-width: 445px;
         font-size: 33px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .services{
+        padding-top: 100px;
+        padding-left: 40px;
+    }
+    .services::before{
+        top: 0;
+        right: -98px;
+    }
+    .services__list-item{
+        width: 500px ;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 110px;
     }
 }
