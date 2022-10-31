@@ -2,6 +2,20 @@
     width: 100%;
     background-color:#012F34 ;
     padding: 198px 165px;
+    position: relative;
+}
+.services::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 200px;
+    height: 244px;
+    margin: 0 auto;
+    background-image: url("../images/another/about-users.png");
+    background-repeat: no-repeat;
 }
 .services__wrapper{
     display: flex;
@@ -51,4 +65,18 @@
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.8;  
+}
+
+@media only screen and (max-width:800px) {
+    .services__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services__list{
+        margin-left: 0;
+    }
+    .services__title{
+        max-width: 445px;
+        font-size: 33px;
+    }
 }

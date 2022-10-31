@@ -2,6 +2,34 @@
     width: 100%;
     background-color: #004047 ;
     padding:  140px 0;
+    position: relative;
+}
+
+.about__users::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 147px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url("../images/another/about-users.png");
+    background-repeat: no-repeat;
+}
+.about__users::after{
+    position: absolute;
+    right: 0;
+    bottom: -97px;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url("../images/another/about-users2.png");
+    background-repeat: no-repeat;
 }
 .about__title{
     font-style: normal;
@@ -17,10 +45,26 @@
 .about__list{
     display: flex;
     align-items: center;
+    padding-top: 92px;
 }
 .about__list-item{
     text-align: center;
     padding: 0 30px;
+    position: relative;
+}
+.about__list-item::before{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 67px;
+    height: 56px;
+    margin: 0 auto;
+    background-image: url("../images/another/“.png");
+    background-repeat: no-repeat;
 }
 .about__list-opinions{
     font-style: normal;
@@ -28,6 +72,8 @@
     font-size: 15px;
     line-height: 25px;
     color: #FFFFFF; 
+    position: relative;
+    z-index: 2;
 }
 .about__list-person{
     font-style: normal;
@@ -40,4 +86,14 @@
     font-size: 13px;
     line-height: 18px;
     color: #FFFFFF;
+    }
+
+
+    @media only screen and (max-width:800px) {
+        .about__list{
+            flex-direction: column;
+        }
+        .about__list-item{
+            margin-bottom: 84px;
+        }
     }

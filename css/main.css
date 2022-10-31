@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -482,9 +483,28 @@ header {
 }
 
 .intro {
-  padding: 79px;
+  padding: 139px 0 250px 0;
   background-color: #014E56;
   width: 100%;
+  position: relative;
+}
+
+.intro::before {
+  position: absolute;
+  display: inline-block;
+  width: 358px;
+  height: 100px;
+  background-image: url("../images/another/left.png");
+  background-repeat: no-repeat;
+}
+
+.intro::after {
+  position: absolute;
+  display: inline-block;
+  width: 358px;
+  height: 100px;
+  background-image: url("../images/another/bottom.png");
+  background-repeat: no-repeat;
 }
 
 .intro__wrapper {
@@ -525,12 +545,6 @@ header {
   line-height: 28px;
   color: #FFFFFF;
   width: 445px;
-}
-
-.intro {
-  background-image: url("../images/another/bottom.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -593,6 +607,21 @@ header {
   width: 100%;
   background-color: #012F34;
   padding: 198px 165px;
+  position: relative;
+}
+
+.services::before {
+  position: absolute;
+  right: -97px;
+  bottom: 0;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 244px;
+  margin: 0 auto;
+  background-image: url("../images/another/sevices-bc.png");
+  background-repeat: no-repeat;
 }
 
 .services__wrapper {
@@ -652,10 +681,52 @@ header {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 800px) {
+  .services__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__list {
+    margin-left: 0;
+  }
+  .services__title {
+    max-width: 445px;
+    font-size: 33px;
+  }
+}
 .about__users {
   width: 100%;
   background-color: #004047;
   padding: 140px 0;
+  position: relative;
+}
+
+.about__users::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 147px;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url("../images/another/about-users.png");
+  background-repeat: no-repeat;
+}
+
+.about__users::after {
+  position: absolute;
+  right: 0;
+  bottom: -97px;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url("../images/another/about-users2.png");
+  background-repeat: no-repeat;
 }
 
 .about__title {
@@ -674,11 +745,28 @@ header {
 .about__list {
   display: flex;
   align-items: center;
+  padding-top: 92px;
 }
 
 .about__list-item {
   text-align: center;
   padding: 0 30px;
+  position: relative;
+}
+
+.about__list-item::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 67px;
+  height: 56px;
+  margin: 0 auto;
+  background-image: url("../images/another/“.png");
+  background-repeat: no-repeat;
 }
 
 .about__list-opinions {
@@ -687,6 +775,8 @@ header {
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
+  position: relative;
+  z-index: 2;
 }
 
 .about__list-person {
@@ -703,10 +793,33 @@ header {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 800px) {
+  .about__list {
+    flex-direction: column;
+  }
+  .about__list-item {
+    margin-bottom: 84px;
+  }
+}
 .contact {
   width: 100%;
   background-color: #F67E7E;
   padding: 76px;
+  position: relative;
+}
+
+.contact::before {
+  position: absolute;
+  left: 0;
+  bottom: -122px;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 244px;
+  margin: 0 auto;
+  background-image: url("../images/another/contact-bc-img.png");
+  background-repeat: no-repeat;
 }
 
 .contact__wrapper {
@@ -734,6 +847,11 @@ header {
   padding: 9PX 32px;
 }
 
+@media only screen and (max-width: 800px) {
+  .contact__title {
+    font-size: 34px;
+  }
+}
 footer {
   width: 100%;
   background-color: #002529;
