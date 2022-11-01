@@ -87,6 +87,11 @@
 }
 
 @media only screen and (max-width:575px) {
+    .services::before{
+        width: 100px;
+        right: 0;
+        bottom: 0;
+    }
     .services{
         padding-top: 100px;
         padding-left: 40px;
